@@ -7,10 +7,10 @@ import HelloWorld from './components/HelloWorld';
 const App: Component = () => {
 
   return (
-    <div>
+    <>
         <h1>Welcome</h1>
         <HelloWorld/>
-    </div>
+    </>
   );
 };
 
