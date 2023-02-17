@@ -1,5 +1,8 @@
 function HelloWorld() {
-    return <div>Hello World!</div>
+    const name = "Solid";
+    const style = { "background-color": "#2c4f7c", color: "#FFF" };
+
+    return <div style={style}>Hello World!</div>
 }
 
 export default HelloWorld;

@@ -5,6 +5,7 @@ import styles from './App.module.css';
 import HelloWorld from './components/HelloWorld';
 
 const App: Component = () => {
+
   return (
     <div>
         <h1>Welcome</h1>
