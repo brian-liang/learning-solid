@@ -7,13 +7,22 @@ import HelloWorld from './components/HelloWorld';
 import { AddBook } from './components/AddBook';
 import { BookList } from './components/BookList';
 
+interface BookshelfProps{
+    name: string
+}
+function Bookshelf(props: BookshelfProps){
+    return(
+        <div>
+            <h1>My Bookshelf</h1>
+            <BookList/>
+            <AddBook/>
+        </div>
+    )
+}
 const App: Component = () => {
-
   return (
     <>
-        <h1>My Bookshelf</h1>
-        <BookList/>
-        <AddBook/>
+        <Bookshelf name="solid"/>
     </>
   );
 };
