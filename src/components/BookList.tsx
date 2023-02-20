@@ -16,14 +16,16 @@ export function BookList() {
 
     return (
         <ul>
-            <li>
-                {books()[0].title}{" "}
-                <span style={{ "font-style": "italic"}}>(Steve McConnell</span>
-            </li>
-            <li>
-                {books()[1].title}{" "}
-                <span style={{"font-style": "italic"}}>(J.R.R Tolkien)</span>
-            </li>
+            <For each={books()}>
+                {(book) => {
+                    return (
+                        <li>
+                            {book.title}
+                            <span style={{ "font-style": "italic"}}>({book.author})</span>
+                        </li>
+                    )
+                }}
+            </For>
         </ul>
     )
 }
