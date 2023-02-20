@@ -6,6 +6,7 @@ import styles from './App.module.css';
 import HelloWorld from './components/HelloWorld';
 import { AddBook } from './components/AddBook';
 import { BookList } from './components/BookList';
+import { Counter } from './components/Counter';
 
 interface BookshelfProps{
     name: string
