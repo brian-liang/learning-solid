@@ -1,4 +1,4 @@
-import { createSignal } from "solid-js";
+import { createSignal, For } from "solid-js";
 
 type Book = {
     title: string;
@@ -13,8 +13,11 @@ const initialBooks: Book[] = [
 
 export function BookList() {
     const [books, setBooks] = createSignal(initialBooks)
+    const totalBooks = () => books().length
 
     return (
+        <>
+        <h2>My Books ({totalBooks()})</h2>
         <ul>
             <For each={books()}>
                 {(book) => {
@@ -27,5 +30,6 @@ export function BookList() {
                 }}
             </For>
         </ul>
+        </>
     )
 }
