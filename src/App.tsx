@@ -8,7 +8,7 @@ import { AddBook } from './components/AddBook';
 import { BookList } from './components/BookList';
 import { Counter } from './components/Counter';
 
-type Book = {
+export type Book = {
     title: string;
     author: string;
 }
@@ -28,7 +28,7 @@ function Bookshelf(props: BookshelfProps){
         <div>
             <h1>{props.name}'s' Bookshelf</h1>
             <BookList books={books()}/>
-            <AddBook/>
+            <AddBook setBooks={setBooks}/>
         </div>
     )
 }
