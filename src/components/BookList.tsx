@@ -1,4 +1,5 @@
 import { createSignal, For } from "solid-js";
+import { Book } from "../App";
 
 interface BookListProps{
     books: Book[]
