@@ -1,12 +1,8 @@
 import { Component, createSignal, Show } from 'solid-js';
 
 
-import logo from './logo.svg';
-import styles from './App.module.css';
-import HelloWorld from './components/HelloWorld';
 import { AddBook } from './components/AddBook';
 import { BookList } from './components/BookList';
-import { Counter } from './components/Counter';
 
 export type Book = {
     title: string;
